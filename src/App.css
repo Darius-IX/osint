@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around; 
+  background-color: aqua;
+}
+
+.content {
+  background-color: goldenrod;
+}
