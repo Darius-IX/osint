@@ -19,6 +19,7 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: var(--color-accent);
+
   .navlink {
     color: var(--color-text);
     text-decoration: none;
@@ -29,6 +30,6 @@ body {
   }
 }
 
-.content {
-  background-color: goldenrod;
+.routed-pages {
+  padding: 1.5rem;
 }

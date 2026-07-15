@@ -1,10 +1,11 @@
-import { NavLink, Route, Routes } from "react-router-dom";
+import { Navigate, NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Ethics from "./pages/Ethics";
 import { AllRoutes } from "./AllRoutes";
 import Collection from "./pages/Collection";
 import Processing from "./pages/Processing";
 import Results from "./pages/Results";
+import Introduction from "./pages/Introduction";
 
 function App() {
   // non-breaking space (avoid line breaks)
@@ -12,6 +13,9 @@ function App() {
   return (
     <main className="app">
       <div className="navbar">
+        <NavLink className={"navlink"} to={AllRoutes.introduction}>
+          Introduction
+        </NavLink>
         <NavLink className={"navlink"} to={AllRoutes.ethics}>
           Ethics
         </NavLink>
@@ -25,12 +29,20 @@ function App() {
           Results
         </NavLink>
       </div>
-      <Routes>
-        <Route path={AllRoutes.ethics} element={<Ethics />} />
-        <Route path={AllRoutes.collection} element={<Collection />} />
-        <Route path={AllRoutes.processing} element={<Processing />} />
-        <Route path={AllRoutes.results} element={<Results />} />
-      </Routes>
+      <div className="routed-pages">
+        <Routes>
+          <Route
+            path="*"
+            element={<Navigate to={AllRoutes.introduction} replace />}
+          />
+          <Route index path={AllRoutes.ethics} element={<Introduction />} />
+          <Route path={AllRoutes.introduction} element={<Introduction />} />
+          <Route path={AllRoutes.ethics} element={<Ethics />} />
+          <Route path={AllRoutes.collection} element={<Collection />} />
+          <Route path={AllRoutes.processing} element={<Processing />} />
+          <Route path={AllRoutes.results} element={<Results />} />
+        </Routes>
+      </div>
     </main>
   );
 }
