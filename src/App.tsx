@@ -35,7 +35,6 @@ function App() {
             path="*"
             element={<Navigate to={AllRoutes.introduction} replace />}
           />
-          <Route index path={AllRoutes.ethics} element={<Introduction />} />
           <Route path={AllRoutes.introduction} element={<Introduction />} />
           <Route path={AllRoutes.ethics} element={<Ethics />} />
           <Route path={AllRoutes.collection} element={<Collection />} />
