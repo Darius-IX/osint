@@ -1,3 +1,12 @@
 :root {
-  --navbar-height: 4rem
+  --color-primary: #1a2b3c; /* Deep Blue */
+  --color-accent: #0d47a1; /* Ocean Blue */
+  --color-contrast: #e0e0e0; /* Light Gray */
+  --color-background: #121212; /* Very Dark Gray */
+  --color-text: #ffffff; /* White */
+  --color-error: #f44336; /* Red */
+  --color-success: #4caf50; /* Green */
+
+  --navbar-height: 4rem;
+  --border-radius: 1rem;
 }
