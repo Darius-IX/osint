@@ -7,9 +7,11 @@ import Processing from "./pages/Processing";
 import Results from "./pages/Results";
 import Introduction from "./pages/Introduction";
 
+export const nbsp = "\u00A0";
+export const approx = "\u2248";
+
 function App() {
   // non-breaking space (avoid line breaks)
-  const nbsp = "\u00A0";
   return (
     <main className="app">
       <div className="navbar">

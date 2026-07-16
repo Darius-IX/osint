@@ -1,7 +1,10 @@
 const Results = () => {
   return (
     <div>
-      <div>Results</div>
+      <h1>Results</h1>
+      <div>
+        <p>TODO</p>
+      </div>
     </div>
   );
 };
