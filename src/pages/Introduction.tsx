@@ -4,6 +4,18 @@ const Introduction = () => {
   return (
     <div>
       <h1>Introduction</h1>
+      <h2>Overview</h2>
+      <p>
+        <strong>Initial Idea:</strong> expose factories harming nature by
+        satellite images
+        <br />
+        <strong>Conceptual approach:</strong> collect satellite images over
+        period of time of known positive and negative examples
+        <br />
+        <strong>Train Model</strong> with the gathered image dataset
+        <br />
+        <strong>Use Model</strong> to identify bad factories
+      </p>
       <div>
         <h2>Objective</h2>
         <p>
