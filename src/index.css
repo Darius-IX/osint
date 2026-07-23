@@ -1,16 +1,61 @@
 :root {
-  --color-primary: #1a2b3c; /* Deep Blue */
-  --color-accent: #0d47a1; /* Ocean Blue */
-  --color-contrast: #e0e0e0; /* Light Gray */
-  --color-background: #121212; /* Very Dark Gray */
-  --color-text: #ffffff; /* White */
-  --color-error: #f44336; /* Red */
-  --color-success: #4caf50; /* Green */
+  --bg-light: #b6dce2;
+  --text-light: #0a090c;
+  --boxes-light: #57a4b2;
+  --borders: #607377;
+  --button-hover: #2f6d75;
+  --button-pressed: #73b3bf;
+  --button-normal: #a5e3f3;
+  --bg-dark: #063437;
+  --boxes-dark: #2d5a62;
+  --text-dark: #b8ccc4;
 
   --navbar-height: 4rem;
   --border-radius: 1rem;
 
+  --color-primary: var(--bg-dark);
+  --color-accent-light: var(--boxes-dark);
+  --color-accent-dark: var(--borders);
+  --color-contrast: var(--button-normal);
+  --color-text: var(--text-dark);
+  --color-text-opp: var(--text-light);
+  --color-links: var(--links-dark);
+
+  --color-primary: var(--bg-light);
+  --color-accent-light: var(--boxes-light);
+  --color-accent-dark: var(--borders);
+  --color-contrast: var(--button-normal);
+  --color-text: var(--text-light);
+  --color-text-opp: var(--text-dark);
+  --color-links: var(--links-light);
+
   font-family: sans-serif;
+}
+
+button {
+  color: var(--text-light);
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: var(--border-radius);
+  border-color: var(--borders);
+  background-color: var(--button-normal);
+  box-shadow: 0 l1(0.5) l1(1) rgba(0, 0, 0, 0.15);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  &:hover {
+    background-color: var(--button-hover);
+    text-decoration: underline;
+    color: var(--button-normal);
+  }
+  &:focus {
+    box-shadow:
+      0 0 0 l1(0.1) blue,
+      0 0 1px l1(0.2) white;
+    background-color: var(--button-pressed);
+  }
+  &:active {
+    background-color: var(--button-pressed);
+  }
 }
 
 h1 {

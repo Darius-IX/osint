@@ -6,6 +6,7 @@ import Collection from "./pages/Collection";
 import Processing from "./pages/Processing";
 import Results from "./pages/Results";
 import Introduction from "./pages/Introduction";
+import ThemeToggle from "./components/ThemeToggle";
 
 export const nbsp = "\u00A0";
 export const approx = "\u2248";
@@ -30,6 +31,7 @@ function App() {
         <NavLink className={"navlink"} to={AllRoutes.results}>
           Results
         </NavLink>
+        <ThemeToggle></ThemeToggle>
       </div>
       <div className="routed-pages">
         <Routes>

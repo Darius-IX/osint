@@ -3,3 +3,17 @@
     text-align: center;
   }
 }
+
+.theme-toggle-wrapper {
+  padding: 0.25rem 0.35rem;
+  gap: 0.25rem;
+  display: flex;
+  .left-span {
+    padding: 0.2rem;
+    border-radius: 100%;
+  }
+  .right-span {
+    padding: 0.2rem;
+    border-radius: 100%;
+  }
+}
