@@ -15,7 +15,7 @@ const Image = ({ src, description, imageStyle }: ImageProps) => {
     <div className="image" style={{ width: width, ...imageStyle }}>
       <img
         ref={imgRef}
-        src={"public/assets/" + src}
+        src={"assets/" + src}
         onLoad={() => {
           if (!imgRef.current) return;
           setWidth(imgRef.current.offsetWidth);
