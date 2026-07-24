@@ -21,13 +21,13 @@
   --color-text-opp: var(--text-light);
   --color-links: var(--links-dark);
 
-  --color-primary: var(--bg-light);
+  /* --color-primary: var(--bg-light);
   --color-accent-light: var(--boxes-light);
   --color-accent-dark: var(--borders);
   --color-contrast: var(--button-normal);
   --color-text: var(--text-light);
   --color-text-opp: var(--text-dark);
-  --color-links: var(--links-light);
+  --color-links: var(--links-light); */
 
   font-family: sans-serif;
 }
@@ -63,9 +63,13 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 img {
   vertical-align: middle;
+}
+
+p {
+  margin-top: 0;
 }

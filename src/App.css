@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0;
+  align-items: center;
 }
 
 .navbar {
@@ -18,6 +19,7 @@ body {
   display: flex;
   gap: 2rem;
   height: var(--navbar-height);
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   background-color: var(--color-accent-light);
@@ -44,4 +46,6 @@ body {
 
 .routed-pages {
   padding: 1.5rem;
+  max-width: 40rem;
+  /* background-color: red; */
 }
